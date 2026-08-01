@@ -1,7 +1,29 @@
 aid: stonks
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/stonks.png
 name: Stonks
-description: Stonks is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Stonks (now operating as Sandhill Markets) is a San Francisco investment
+  platform, founded circa 2019-2020 by serial entrepreneur Ali Moiz, that lets
+  accredited investors buy and sell shares of top pre-IPO companies on the
+  private secondary market - often described as "Robinhood for private markets."
+  The business is run through the SEC-registered adviser Sandhill Markets
+  Advisors LLC and also publishes Sandhill Report, a venture-focused newsletter
+  covering startups, funding, and the broader VC market. Surfaced as a portfolio
+  company of 500 Global and added to the API Evangelist network. As of this
+  enrichment pass Sandhill Markets publishes no public developer API, OpenAPI,
+  SDK, or developer portal; this profile captures the company's public identity
+  and a live domain-security probe of its primary domain.
 url: https://raw.githubusercontent.com/api-evangelist/stonks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Private Markets
+- Secondaries
+- Investing
+- Fintech
+- Venture Capital
+- Pre-IPO
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +51,12 @@ maintainers:
 common:
 - type: Website
   url: https://sandhillmarkets.com
+- type: Blog
+  url: https://blog.sandhillmarkets.com
+- type: DomainSecurity
+  url: security/stonks-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
