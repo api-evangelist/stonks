@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "stonks",
+    "captured_at": "2026-10-11T194335",
+    "source_url": "https://sandhillmarkets.com",
+    "source_type": "Website",
+    "file": "stonks-2026-10-11T194335.png",
+    "bytes": 27598,
+    "capture": "playwright-local"
+  }
+]
